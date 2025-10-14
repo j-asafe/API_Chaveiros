@@ -1,10 +1,10 @@
-import PlanetsDBList from "../components/PlanetsDBList";
+import ValorantList from "../components/ValoranList";
 
 export default function Home() {
   return (
     <section>
-      <h2>Lista de Planetas do DB</h2>
-      <PlanetsDBList />
+      <h2>Lista de Chaveiros Valorant</h2>
+      <ValorantList />
     </section>
   );
 }
