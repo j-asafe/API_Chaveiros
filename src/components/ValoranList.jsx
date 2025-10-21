@@ -9,14 +9,14 @@ export default function ValorantList() {
     fetch(API_URL)
       .then((res) => res.json())
       .then((data) => {
-        setBuddies(data.data);  // acessando o array correto
+        setBuddies(data.data);
       })
       .catch((err) => console.error("Erro ao buscar dados:", err));
   }, []);
 
   return (
     <ul style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
-      {buddies.map((buddy) => (
+      {buddies.slice(0, 20).map((buddy) => (
         <li
           key={buddy.uuid}
           style={{
